@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui._2onboarding.OnboardActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/onboard_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/dots"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/skip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/manrope_bold"
+        android:gravity="start|center_vertical"
+        android:text="Skip"
+        android:textColor="@color/eclipse"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/dots"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dots"
+        app:layout_constraintTop_toTopOf="@id/dots" />
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/skip"
+        app:layout_constraintRight_toLeftOf="@id/next"
+        app:layout_constraintTop_toBottomOf="@id/onboard_pager" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/manrope_bold"
+        android:gravity="end|center_vertical"
+        android:text="Next"
+        android:textColor="@color/eclipse"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/dots"
+        app:layout_constraintLeft_toRightOf="@id/dots"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dots" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

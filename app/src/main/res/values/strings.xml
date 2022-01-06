@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Monumental</string>
+    <string name="onboard_message">We can <font color='#FC9D45'>help you</font> to be a better version of <font color='#FC9D45'>yourself.</font></string>
+
+    <string name="onboard_heading_1">WELCOME TO MONUMENTAL HABITS</string>
+    <string name="onboard_heading_2">CREATE NEW HABIT EASILY</string>
+    <string name="onboard_heading_3">KEEP TRACK OF YOUR PROGRESS</string>
 </resources>

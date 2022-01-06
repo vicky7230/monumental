@@ -3,7 +3,8 @@ package com.vicky7230.monumental
 import android.app.Application
 import com.vicky7230.monumental.di.appModule
 import com.vicky7230.monumental.di.networkModule
-import com.vicky7230.monumental.ui.splash.splashActivityModule
+import com.vicky7230.monumental.ui._1splash.splashActivityModule
+import com.vicky7230.monumental.ui._2onboarding.onboardActivityModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
@@ -26,7 +27,8 @@ class Monumental : Application() {
                 listOf(
                     appModule,
                     networkModule,
-                    splashActivityModule
+                    splashActivityModule,
+                    onboardActivityModule
                 )
             )
         }
