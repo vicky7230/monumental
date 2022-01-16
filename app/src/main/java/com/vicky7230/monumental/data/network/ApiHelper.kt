@@ -4,5 +4,5 @@ import com.google.gson.JsonElement
 import retrofit2.Response
 
 interface ApiHelper {
-    suspend fun getNews(): Response<JsonElement>
+    suspend fun getOTP(): Response<JsonElement>
 }

@@ -10,7 +10,7 @@ class SplashViewModel(private val dataManager: DataManager) : ViewModel() {
 
     fun getNews() {
         viewModelScope.launch(Dispatchers.IO) {
-            dataManager.getNews()
+            //dataManager.getNews()
         }
     }
 

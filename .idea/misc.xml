@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/cursor_drawable.xml" value="0.23412162162162162" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/curved_background.xml" value="0.23412162162162162" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/curved_bg_error.xml" value="0.23412162162162162" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/edittext_background.xml" value="0.23412162162162162" />
         <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/nonselected_drawable.xml" value="0.23412162162162162" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/round_shape_btn.xml" value="0.16114864864864864" />
         <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/drawable/selected_drawable.xml" value="0.23412162162162162" />
-        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/activity_main.xml" value="0.34479166666666666" />
-        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/activity_main.xml" value="0.21351616062683643" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/activity_onboarding.xml" value="0.2" />
         <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/onboard_item.xml" value="0.25" />
+        <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/layout/progress_dialog.xml" value="0.22364864864864864" />
         <entry key="..\:/Users/Vicky/OneDrive/Desktop/monumental/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3609375" />
         <entry key="..\:/Users/Vicky/OneDrive/Documents/monumental/app/src/main/res/layout/activity_main.xml" value="0.25815217391304346" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18618421052631579" />

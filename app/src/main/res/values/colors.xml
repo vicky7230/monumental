@@ -17,5 +17,8 @@
     <color name="river">#B1AFE9</color>
     <color name="mountain">#DDDCFE</color>
     <color name="eclipse">#573353</color>
+    <color name="eclipse_light">#80573353</color>
 
+    <color name="edittext_color">#FFF6ED</color>
+    <color name="text_color">#FDA758</color>
 </resources>

@@ -6,8 +6,8 @@ import retrofit2.Response
 
 class AppApiHelper constructor(private val apiService: ApiService) : ApiHelper {
 
-    override suspend fun getNews(): Response<JsonElement> {
-        return apiService.getNews()
+    override suspend fun getOTP(): Response<JsonElement> {
+        return apiService.getOTP()
     }
 
 }

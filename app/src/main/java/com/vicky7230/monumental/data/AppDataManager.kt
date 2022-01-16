@@ -12,8 +12,8 @@ class AppDataManager(
     private val appDbHelper: AppDbHelper,
     private val appPreferencesHelper: AppPreferencesHelper
 ) : DataManager {
-    override suspend fun getNews(): Response<JsonElement> {
-        return appApiHelper.getNews()
+    override suspend fun getOTP(): Response<JsonElement> {
+        return appApiHelper.getOTP()
     }
 
     override suspend fun insertUser(user: User): Long {
