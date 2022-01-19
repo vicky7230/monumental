@@ -66,6 +66,7 @@
             android:background="@color/sky" />
 
         <LinearLayout
+            android:id="@+id/email_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -80,14 +81,14 @@
                 android:layout_width="18dp"
                 android:layout_height="15dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/mail" />
+                app:srcCompat="@drawable/ic_mail" />
 
             <View
                 android:layout_width="0.5dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
-                android:visibility="gone"
-                android:background="@color/text_color" />
+                android:background="@color/text_color"
+                android:visibility="gone" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/email_field"
@@ -97,13 +98,14 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/manrope_bold"
+                android:hint="email id here"
+                android:text="vicky7230@gmail.com"
+                android:imeOptions="actionDone"
                 android:inputType="textEmailAddress"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:hint="email id here"
-                android:textColorHint="@color/eclipse_light"
-                android:imeOptions="actionDone"
                 android:textColor="@color/text_color"
+                android:textColorHint="@color/eclipse_light"
                 android:textCursorDrawable="@drawable/cursor_drawable"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -116,6 +118,68 @@
             android:background="@drawable/round_shape_btn"
             android:fontFamily="@font/manrope_bold"
             android:text="Get OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/eclipse"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/otp_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_otp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@color/text_color"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/manrope_bold"
+                android:hint="OTP"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/eclipse_light"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify_otp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_shape_btn"
+            android:fontFamily="@font/manrope_bold"
+            android:text="Verify OTP"
             android:textAllCaps="false"
             android:textColor="@color/eclipse"
             android:textSize="16sp" />

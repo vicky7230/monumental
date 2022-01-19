@@ -10,6 +10,11 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
 import com.vicky7230.monumental.R
 import com.vicky7230.monumental.utils.CommonUtils
+import android.graphics.Typeface
+
+import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
+
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -35,13 +40,20 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     private fun displayMessage(message: String) {
-        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT)
-            .show()
+        val snackBar =
+            Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT)
+        val font = ResourcesCompat.getFont(this, R.font.manrope_bold)
+        snackBar.view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text).typeface =
+            font
+        snackBar.show()
     }
 
     private fun displayError(message: String) {
         val snackBar =
             Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT)
+        val font = ResourcesCompat.getFont(this, R.font.manrope_bold)
+        snackBar.view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text).typeface =
+            font
         snackBar.view.setBackgroundResource(R.drawable.curved_bg_error)
         snackBar.show()
     }

@@ -19,11 +19,7 @@
             android:name=".ui._1splash.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -33,9 +29,17 @@
 
         <activity
             android:name=".ui._3login.LoginActivity"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="stateVisible|adjustPan"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
